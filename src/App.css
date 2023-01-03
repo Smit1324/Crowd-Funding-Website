@@ -1,13 +1,61 @@
-.App {
-  text-align: center;
+.navbar {
+  background-color: white;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo {
+  width: 9.59vw;
+  height: 16.9vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
+.navbar-nav {
+  position: absolute;
+  right: 0;
+}
+
+.link {
+  /* font-family: Inter !important;
+  font-style: normal; */
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+
+  color: #000000;
+
+}
+
+#login {
+  width: 8vw;
+  height: 7vh;
+  /* background: #FFFFFF; */
+  /* border: 1px solid #000000; */
+  border-radius: 7px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+
+  /* color: #000000; */
+
+}
+
+/* .ver_div {
+  width: 1px;
+  height: 53px;
+  
+} */
+
+#signup {
+  width: 10vw;
+  height: 7vh;
+  /* border: 2px solid rgba(45, 53, 249, 0.9); */
+  border-radius: 7px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+
+  /* color: white; */
+}
+
+/* @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
@@ -36,3 +84,4 @@
     transform: rotate(360deg);
   }
 }
+ */
