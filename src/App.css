@@ -3,6 +3,23 @@
 body {
   font-family: 'Poppins', sans-serif;
 }
+
+.sc-btn {
+  padding: 2vh 5vh;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.sc-btn-2 {
+  padding: 1vh 4.5vh;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 23px;
+  letter-spacing: 0.5px;
+  color: #4c4c4c;
+}
+
 /* NAVBAR */
 .navbar {
   background-color: white;
@@ -43,6 +60,7 @@ body {
   font-size: 18px;
   line-height: 23px;
 }
+
 /* HOME */
 .head {
   font-family: 'Poppins';
@@ -72,12 +90,6 @@ body {
   color: #B1B1B1;
 }
 
-#invest {
-  padding: 2vh 5vh;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 23px;
-}
 
 .sub {
   font-family: 'Poppins';
@@ -89,42 +101,37 @@ body {
 
   color: #8A8A8A;
 }
-.login-link{
+
+.login-link {
   text-decoration: none;
   color: blue;
 }
-.first_img{
+
+.first_img {
   position: absolute;
   right: 9vw;
   top: 3vh;
 }
-/* @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+/* SIGN UP */
+.signup-img {
+  width: 36vw;
+  height: 78vh;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.sign-head {
+  font-weight: 600;
 }
 
-.App-link {
-  color: #61dafb;
+.lbl {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 32px;
+  color: #8A8A8A;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* LOGIN */
+.login-img {
+  width: 44vw;
+  height: 60vh;
 }
- */

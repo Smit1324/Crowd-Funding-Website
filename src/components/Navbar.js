@@ -8,7 +8,9 @@ const Navbar = () => {
             <nav className="navbar navbar-expand-lg">
                 <div className="container-fluid">
                     <NavLink className="navbar-brand" to="/"><img src={logo} className='logo img-fluid' alt='Shayar' /></NavLink >
-
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
                     <div className="collapse navbar-collapse" id="navbarNav">
                         <ul className="navbar-nav">
                             <li className="nav-item mx-4">
@@ -20,15 +22,17 @@ const Navbar = () => {
                             <li className="nav-item mx-4">
                                 <NavLink className="nav-link link" aria-current="page" to="/contactus">Contact Us</NavLink >
                             </li>
-                            <div className="flex">
-                                <Link className="btn btn-outline-info btn-lg mx-4" id='login'>Login</Link>
-                                
+                            <div className="d-flex">
+                                <Link className="btn btn-outline-success btn-lg mx-4" id='login' to='/login'>Login</Link>
+
                                 <Link className="btn btn-outline-primary btn-lg" id='signup' to='/signup'>Sign Up</Link>
                             </div>
                         </ul>
                     </div>
                 </div>
             </nav>
+
+
         </div>
     )
 }
