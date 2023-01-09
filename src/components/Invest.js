@@ -1,9 +1,8 @@
 import React from 'react'
 
-
 const Invest = () => {
   return (
-    <div>Invest</div>
+    <h1>Invest</h1>
   )
 }
 

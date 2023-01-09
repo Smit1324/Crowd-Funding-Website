@@ -61,6 +61,29 @@ body {
   line-height: 23px;
 }
 
+/* SIGN UP */
+.signup-img {
+  width: 36vw;
+  height: 78vh;
+}
+
+.sign-head {
+  font-weight: 600;
+}
+
+.lbl {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 32px;
+  color: #8A8A8A;
+}
+
+/* LOGIN */
+.login-img {
+  width: 44vw;
+  height: 60vh;
+}
+
 /* HOME */
 .head {
   font-family: 'Poppins';
@@ -113,25 +136,19 @@ body {
   top: 3vh;
 }
 
-/* SIGN UP */
-.signup-img {
-  width: 36vw;
-  height: 78vh;
+/* RAISE */
+.raise-head-comp {
+  background: linear-gradient(90deg, #00FFFF -13.55%, #000AFF 93.18%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
 }
 
-.sign-head {
-  font-weight: 600;
-}
-
-.lbl {
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 32px;
-  color: #8A8A8A;
-}
-
-/* LOGIN */
-.login-img {
-  width: 44vw;
-  height: 60vh;
+.raise_img {
+  width: 35vw;
+  height: 45vh;
+  position: absolute;
+  right: 5vw;
+  top: 7vh;
 }
