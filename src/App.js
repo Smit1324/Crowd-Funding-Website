@@ -1,5 +1,6 @@
 import React from 'react';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import Home from './components/Home';
 import Invest from './components/Invest';
 import Raise from './components/Raise';
@@ -22,8 +23,9 @@ function App() {
           <Route exact path='/signup' element={<SignUp />}></Route>
           <Route exact path='/login' element={<Login />}></Route>
         </Routes>
+        <Footer />
       </Router>
-        
+
     </>
   );
 }

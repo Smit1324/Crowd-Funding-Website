@@ -2,6 +2,12 @@
 
 body {
   font-family: 'Poppins', sans-serif;
+  /* position: relative; */
+}
+
+.logo {
+  width: 9.59vw;
+  height: 17.9vh;
 }
 
 .sc-btn {
@@ -26,10 +32,6 @@ body {
   height: 18vh;
 }
 
-.logo {
-  width: 9.59vw;
-  height: 16.9vh;
-}
 
 .navbar-nav {
   position: absolute;
@@ -151,4 +153,60 @@ body {
   position: absolute;
   right: 5vw;
   top: 7vh;
+}
+
+/* FOOTER */
+.foot {
+  background: rgba(118, 123, 255, 0.11);
+  height: 110vh;
+}
+
+.foot-head {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  color: #161616;
+}
+
+.foot-link {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 30px;
+  /* letter-spacing: 0.04em; */
+  color: #424242;
+}
+
+.ext-link {
+  color: #424242;
+  font-size: 1.3rem;
+}
+
+.ext-link:hover {
+  color: #000000;
+}
+
+.foot-sub {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 26px;
+  /* color: #424242; */
+  color: #8A8A8A;
+}
+
+.foot-contact {
+  font-weight: 600;
+}
+
+.foot-cnt{
+  color: #686868;
+  font-size: 15px;
+  font-weight: 400;
+}
+.foot-cnt:hover{
+  cursor: pointer;
+  color: #000000;
+  font-size: 15px;
+  font-weight: 500;
 }

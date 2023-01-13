@@ -4,10 +4,10 @@ import first from '../imgs/first_img.png'
 
 const Home = () => {
   return (
-    <div className='container mt-5 d-flex position-relative'>
+    <div className='container mt-5 d-flex flex-wrap position-relative'>
       <div className='ms-4 d-flex flex-column'>
         <div className='h1 head'>Invest In<br />Our Startup at<br /> <NavLink to='#' className='head-comp'>Shayar</NavLink> Community</div>
-        <div className='h6 sub-head mt-2'>Providing Platform for all talented Souls || Start <br />Investment with as small amount as <i class="fa-solid fa-indian-rupee-sign"></i> 5000</div>
+        <div className='h6 sub-head mt-2'>Providing Platform for all talented Souls || Start <br />Investment with as small amount as <i className="fa-solid fa-indian-rupee-sign"></i> 5000</div>
         <div className='mt-3'>
           <Link className='btn btn-primary btn-lg sc-btn' to='/invest'>Invest Now <i className="fa-solid fa-arrow-right"></i></Link>
         </div>

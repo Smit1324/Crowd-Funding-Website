@@ -25,8 +25,8 @@ const Login = () => {
                     <button className='btn btn-outline-primary btn-lg sc-btn w-100'>Sign In</button>
 
                     <div className='d-flex justify-content-center w-100 mt-3'>
-                        <button className='btn btn-outline-success btn-lg sc-btn-2 me-2'><i class="fa-brands fa-google"></i> Continue with google</button>
-                        <button className='btn btn-outline-info btn-lg sc-btn-2 ms-2'><i class="fa-brands fa-facebook"></i> Continue with facebook</button>
+                        <button className='btn btn-outline-success btn-lg sc-btn-2 me-2'><i className="fa-brands fa-google"></i> Continue with google</button>
+                        <button className='btn btn-outline-info btn-lg sc-btn-2 ms-2'><i className="fa-brands fa-facebook"></i> Continue with facebook</button>
                     </div>
                 </form>
             </div>
