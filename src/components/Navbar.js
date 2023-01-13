@@ -19,9 +19,6 @@ const Navbar = () => {
                             <li className="nav-item mx-4">
                                 <NavLink className="nav-link link" aria-current="page" to="/raise">Raise</NavLink >
                             </li>
-                            <li className="nav-item mx-4">
-                                <NavLink className="nav-link link" aria-current="page" to="/contactus">Contact Us</NavLink >
-                            </li>
                             <div className="d-flex">
                                 <Link className="btn btn-outline-success btn-lg mx-4" id='login' to='/login'>Login</Link>
 

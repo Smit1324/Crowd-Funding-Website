@@ -4,12 +4,12 @@ import login from '../imgs/login.png'
 const Login = () => {
     return (
         <div className='container position-relative mt-5  d-flex'>
-            <div>
+            <div className='d-none d-md-block d-lg-block'>
                 <img src={login} alt="img" className='login-img img-fluid' />
             </div>
-            <div className='position-absolute end-0 me-5'>
-                <div className='h2 sign-head'>Login to Your Account</div>
-                <form className='mt-4'>
+            <div className='ms-lg-5'>
+                <div className='h2 sign-head ms-lg-4'>Login to Your Account</div>
+                <form className='mt-4 ms-lg-4'>
                     
 
                     <div className="mb-3">

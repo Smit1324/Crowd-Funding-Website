@@ -10,8 +10,15 @@ body {
   height: 17.9vh;
 }
 
+.scr-btn {
+  padding: 2.2vh 5vh;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+}
+
 .sc-btn {
-  padding: 2vh 5vh;
+  padding: 2.2vh 5vh;
   font-weight: 500;
   font-size: 18px;
   line-height: 23px;
@@ -26,9 +33,9 @@ body {
   color: #4c4c4c;
 }
 
+
 /* NAVBAR */
 .navbar {
-  background-color: white;
   height: 18vh;
 }
 
@@ -79,6 +86,15 @@ body {
   line-height: 32px;
   color: #8A8A8A;
 }
+/* INVEST */
+.invest-head-comp {
+  background: linear-gradient(90deg, #303030 -13.55%, #2a33ff 93.18%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  cursor: default;
+}
 
 /* LOGIN */
 .login-img {
@@ -96,7 +112,7 @@ body {
 }
 
 .head-comp {
-  cursor: none;
+  cursor: default;
   font-weight: 600;
   background: linear-gradient(174.44deg, #3D4094 67.85%, #853592 79.97%);
   -webkit-background-clip: text;
@@ -134,7 +150,7 @@ body {
 
 .first_img {
   position: absolute;
-  right: 9vw;
+  right: 7vw;
   top: 3vh;
 }
 
@@ -145,14 +161,19 @@ body {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
+  cursor: default;
 }
 
 .raise_img {
   width: 35vw;
   height: 45vh;
   position: absolute;
-  right: 5vw;
+  right: 2vw;
   top: 7vh;
+}
+
+.raise-cards {
+  width: 100%;
 }
 
 /* FOOTER */
@@ -199,14 +220,79 @@ body {
   font-weight: 600;
 }
 
-.foot-cnt{
+.foot-cnt {
   color: #686868;
   font-size: 15px;
   font-weight: 400;
 }
-.foot-cnt:hover{
+
+.foot-cnt:hover {
   cursor: pointer;
   color: #000000;
   font-size: 15px;
   font-weight: 500;
+}
+
+/* RESPONSIVENESS */
+
+@media only screen and (max-width: 600px) {
+
+  .navbar {
+    height: 11vh;
+  }
+
+  .logo {
+    width: 22.59vw;
+    height: 9.9vh;
+  }
+
+  .scr-btn {
+    padding: 1.5vh 5vh;
+  }
+
+  .home {
+    height: 90vh;
+  }
+
+  .raise {
+    height: 80vh;
+  }
+
+  .first_img {
+    width: 88vw;
+    height: 35vh;
+    position: absolute;
+    right: 4vw;
+    top: 56vh;
+  }
+
+  .raise_img {
+    width: 88vw;
+    height: 30vh;
+    position: absolute;
+    right: 6vw;
+    top: 50vh;
+
+  }
+
+  .raise-cards {
+    width: 90%;
+    margin-left: 2.4vh;
+    text-align: center;
+  }
+
+  .sign-head {
+    text-align: center;
+  }
+
+  .sc-btn {
+    padding: 1vh 5vh;
+  }
+
+  .sc-btn-2 {
+    padding: 0.5vh 4.5vh;
+    font-size: 7px;
+  }
+
+
 }

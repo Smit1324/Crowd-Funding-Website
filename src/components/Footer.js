@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom'
 import logo from '../imgs/logo.png'
 const Footer = () => {
     return (
-        <div className="container-fluid foot">
+        <div className="container-fluid foot" id='footer'>
 
             <div className="container">
                 <footer className="d-flex flex-column py-2 my-5 position-relative">
@@ -73,11 +73,13 @@ const Footer = () => {
                             <p className='h6 text-muted foot-contact'> Shayar Community Pvt Ltd (CIN : xxxxxxxxxxxxxxxxxxxxx)
                             </p>
 
-                            <p className='mt-3'><a href="#" className='text-decoration-none  foot-cnt'><i className="fa-solid fa-phone"></i> +91 XXXXX XXXXX</a></p>
+                            <p className='mt-3'><a href="#footer" className='text-decoration-none  foot-cnt'><i className="fa-solid fa-phone"></i> +91 70435 07789</a></p>
 
-                            <p className='mt-0'><a href="#" className='text-decoration-none  foot-cnt'><i className="fa-solid fa-envelope"></i> xxxx@xxxxxx.xx</a></p>
+                            <p className='mt-0'><a href="#footer" className='text-decoration-none  foot-cnt'><i className="fa-solid fa-envelope"></i> info@shayar.me</a></p>
 
-                            <p className='mt-0'><a href="#" className='text-decoration-none  foot-cnt'><i className="fa-solid fa-location-dot"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis aliquam aut molestiae incidunt</a></p>
+                            <p className='mt-0'><a href="#footer" className='text-decoration-none  foot-cnt'><i className="fa-solid fa-location-dot"></i> G-405,Darshanam Plaza,
+                                Danteshwar,Vadodara,
+                                Gujarat 390004</a></p>
 
                         </div>
                     </div>
