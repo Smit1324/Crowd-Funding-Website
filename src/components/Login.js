@@ -3,7 +3,7 @@ import login from '../imgs/login.png'
 
 const Login = () => {
     return (
-        <div className='container position-relative mt-5  d-flex'>
+        <div className='container position-relative mt-5 d-flex login'>
             <div className='d-none d-md-block d-lg-block'>
                 <img src={login} alt="img" className='login-img img-fluid' />
             </div>

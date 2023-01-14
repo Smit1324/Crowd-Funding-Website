@@ -1,6 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import raise from '../imgs/raise.png'
+import invest from '../imgs/invest.png'
 
 const Invest = () => {
   return (
@@ -9,28 +9,76 @@ const Invest = () => {
         className="row g-0 overflow-hidden flex-md-row mb-5 h-md-250 position-relative w-100 raise">
         <div className="col mb-2 ps-4 d-flex flex-column position-static">
           <div className='h1 head'>
-          <NavLink to='#' className='invest-head-comp'>Invest Now</NavLink>
+            <NavLink to='#' className='invest-head-comp'>Invest Now</NavLink>
           </div>
           <div className='h6 sub-head mt-2'>
             Browse latest investment opportunities in SHAYAR
           </div>
         </div>
       </div>
-      <div className='my-5'>
-        <div className='row'>
-          <div
-            className="mt-4 row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative raise-cards">
-            <div className="col py-5 px-4 d-flex flex-column position-static">
-              <h3 className="mb-0">Heading</h3>
-              <p className="card-text mb-auto mt-3 text-muted">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa harum aperiam cupiditate deleniti officiis esse fuga voluptatem, assumenda, ratione autem molestiae libero voluptatibus aspernatur dolorum, est
+
+
+      <div className="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-3">
+
+        <div className="col">
+          <div className="card shadow-sm">
+            <img src={invest} className="card-img-top img-fluid" width="100%" height="225" />
+            <div className="card-body text-center">
+              <p className="card-textr">
+                <h3>METEOR 350</h3>
+                ROYAL ENFIELD
               </p>
-            </div>
-            <div className="col-auto py-4 px-4 d-none d-lg-block">
-              <img src={raise} alt="img" className="bd-placeholder-img img-fluid" />
+              <div className="d-flex justify-content-center align-items-center">
+                <div className="btn-group">
+                  <button type="button" className="btn btn-sm btn-outline-light px-4">View</button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
+
+        <div className="col">
+          <div className="card shadow-sm text-bg-dark">
+            <img src={invest} className="card-img-top hover" width="100%" height="225" />
+
+            <div className="card-body text-center">
+              <p className="card-textr">
+                <h3>INTERCEPTOR</h3>
+                ROYAL ENFIELD
+              </p>
+              <div className="d-flex justify-content-center align-items-center">
+                <div className="btn-group">
+                  <button type="button" className="btn btn-sm btn-outline-light px-4">View</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="col">
+          <div className="card shadow-sm text-bg-dark">
+            <img src={invest} className="card-img-top hover" width="100%" height="225" />
+
+            <div className="card-body text-center">
+              <p className="card-textr">
+                <h3>SCRAM 411</h3>
+                ROYAL ENFIELD
+              </p>
+              <div className="d-flex justify-content-center align-items-center">
+                <div className="btn-group">
+                  <button type="button" className="btn btn-sm btn-outline-light px-4">View</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
       </div>
+
+
     </div>
   )
 }

@@ -49,9 +49,7 @@ body {
   font-weight: 500;
   font-size: 20px;
   line-height: 23px;
-
   color: #000000;
-
 }
 
 #login {
@@ -86,6 +84,7 @@ body {
   line-height: 32px;
   color: #8A8A8A;
 }
+
 /* INVEST */
 .invest-head-comp {
   background: linear-gradient(90deg, #303030 -13.55%, #2a33ff 93.18%);
@@ -279,6 +278,10 @@ body {
     width: 90%;
     margin-left: 2.4vh;
     text-align: center;
+  }
+
+  .login {
+    margin-left: 4vw;
   }
 
   .sign-head {
