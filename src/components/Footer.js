@@ -8,7 +8,7 @@ const Footer = () => {
             <div className="container">
                 <footer className="d-flex flex-column py-2 my-5 position-relative">
 
-                    <div className='d-flex mb-4'>
+                    <div className='d-flex mb-4 f0'>
 
                         <div className="mb-3">
                             <NavLink to='/'>
@@ -18,7 +18,7 @@ const Footer = () => {
 
                         </div>
 
-                        <div className='d-flex position-absolute end-0 mt-4'>
+                        <div className='d-flex mt-4 f1'>
 
                             <div className="mb-3 mx-5">
                                 <h5 className='h5 foot-head mt-2'>Investors</h5>
@@ -43,10 +43,11 @@ const Footer = () => {
                                     </li>
                                 </ul>
                             </div>
-                            <div className="mb-3 ms-5">
+
+                            <div className="mb-3 ms-5 f2">
                                 <h5 className='h5 foot-head mt-2'>Get In Touch</h5>
-                                <p className='text-muted mt-3 lh-lg'>Ouestions or Feedback<br />Ask Us Anything</p>
-                                <ul className="nav flex-row">
+                                <p className='text-muted mt-3 lh-lg f2-txt'>Ouestions or Feedback<br />Ask Us Anything</p>
+                                <ul className="nav flex-row text-sm-center text-lg-left f2-icons">
                                     <li className="nav-item mb-2 me-2">
                                         <a className="ext-link" href="https://www.linkedin.com/company/shayar-community-private-limited/?originalSubdomain=in" target="_blank"><i className="fa-brands fa-linkedin"></i></a >
                                     </li>

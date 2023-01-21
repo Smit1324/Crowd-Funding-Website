@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 import login from '../imgs/login.png'
 
 const Login = () => {
@@ -22,7 +23,7 @@ const Login = () => {
                         <input type="password" className="form-control" id="InputPassword1" />
                     </div>
 
-                    <button className='btn btn-outline-primary btn-lg sc-btn w-100'>Sign In</button>
+                    <NavLink className='btn btn-outline-primary btn-lg sc-btn w-100' to="/Success">Sign In</NavLink>
 
                     <div className='d-flex justify-content-center w-100 mt-3'>
                         <button className='btn btn-outline-success btn-lg sc-btn-2 me-2'><i className="fa-brands fa-google"></i> Continue with google</button>

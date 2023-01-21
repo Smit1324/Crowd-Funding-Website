@@ -2,12 +2,18 @@
 
 body {
   font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
   /* position: relative; */
 }
 
 .logo {
   width: 9.59vw;
   height: 17.9vh;
+}
+
+.media {
+  width: 9.59vw;
+  height: 8.9vh;
 }
 
 .scr-btn {
@@ -153,6 +159,97 @@ body {
   top: 3vh;
 }
 
+.div-head {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 43px;
+  line-height: 50px;
+}
+
+.md {
+  background: rgb(113 113 113 / 5%);;
+}
+
+.med {
+  display: flex;
+  justify-content: space-around;
+}
+
+.patta {
+  width: 30vw;
+  height: 53vh;
+  cursor: pointer;
+  box-shadow: 7px 5px 8px rgba(0, 0, 0, 0.5);
+  border-radius: 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+.cir {
+  border-radius: 10rem;
+  width: 7vw;
+  height: 14vh;
+  background-color: #ebe609;
+}
+
+.patta-lik {
+  color: white;
+}
+
+
+/* INVEST */
+
+.inv0 {
+  width: 30vw;
+  height: 101vh;
+  cursor: pointer;
+  background-color: #fafffe;
+}
+
+.inv0:hover {
+  background-color: #0000000f;
+}
+
+.inv1 {
+  width: 5.5vw;
+  height: 11vh;
+}
+
+.inv-name {
+  height: 10vh;
+}
+
+.inv-sec {
+  background: rgba(140, 255, 152, 0.68);
+  border-radius: 6px;
+  width: 13vw;
+  height: 5.5vh;
+  font-size: 16px;
+}
+
+.inv-divi {
+  height: 1.6vh;
+  background: linear-gradient(90deg, #00D8FF 0%, #4200FF 97.99%);
+  border-radius: 27px;
+}
+
+.inv-per {
+  background: rgba(140, 255, 152, 0.68);
+  border-radius: 6px;
+  width: 9vw;
+  height: 9vh;
+  font-size: 18px;
+}
+
+.inv2 {
+  margin-top: -7px;
+}
+
+.inv3 {
+  width: 17.9vw;
+}
+
 /* RAISE */
 .raise-head-comp {
   background: linear-gradient(90deg, #00FFFF -13.55%, #000AFF 93.18%);
@@ -179,6 +276,11 @@ body {
 .foot {
   background: rgba(118, 123, 255, 0.11);
   height: 110vh;
+}
+
+.f1 {
+  position: absolute;
+  right: 0;
 }
 
 .foot-head {
@@ -232,21 +334,37 @@ body {
   font-weight: 500;
 }
 
+
+
 /* RESPONSIVENESS */
 
 @media only screen and (max-width: 600px) {
+  .head {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .sub-head {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .sub {
+    font-size: 14px;
+    line-height: 0px;
+  }
 
   .navbar {
     height: 11vh;
   }
 
   .logo {
-    width: 22.59vw;
-    height: 9.9vh;
+    width: 25.59vw;
+    height: 11.9vh;
   }
 
   .scr-btn {
-    padding: 1.5vh 5vh;
+    padding: 1.2vh 3vh;
   }
 
   .home {
@@ -254,15 +372,15 @@ body {
   }
 
   .raise {
-    height: 80vh;
+    height: 49vh;
   }
 
   .first_img {
     width: 88vw;
     height: 35vh;
     position: absolute;
-    right: 4vw;
-    top: 56vh;
+    right: 6.5vw;
+    top: 73vh;
   }
 
   .raise_img {
@@ -281,7 +399,7 @@ body {
   }
 
   .login {
-    margin-left: 4vw;
+    margin-left: 0vw;
   }
 
   .sign-head {
@@ -297,5 +415,90 @@ body {
     font-size: 7px;
   }
 
+  .foot {
+    height: 195vh;
+  }
 
+  .f0 {
+    flex-direction: column;
+  }
+
+  .f1 {
+    flex-direction: column;
+    position: static;
+    text-align: center;
+  }
+
+  .f2 {
+    margin-right: 10vw;
+  }
+
+  .f2-txt {
+    margin-left: 2vw;
+  }
+
+  .f2-icons {
+    margin-left: 19vw;
+  }
+
+  .inv {
+    height: 14vh;
+  }
+
+  .inv0 {
+    width: 94.5vw;
+    height: 79vh;
+  }
+
+  .inv1 {
+    width: 22vw;
+    height: 9vh;
+  }
+
+  .inv3 {
+    width: 54.9vw;
+    font-size: .8rem;
+  }
+
+  .inv-sec {
+    width: 40vw;
+    height: 4vh;
+    font-size: 13px;
+  }
+
+  .inv-divi {
+    height: 0.8vh;
+  }
+
+  .inv-per {
+    width: 29vw;
+    height: 7vh;
+  }
+
+  .media {
+    width: 25.59vw;
+    height: 4.9vh;
+  }
+
+  .div-head {
+    font-size: 35px;
+    line-height: 35px;
+  }
+
+  .med {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .patta {
+    width: 93vw;
+    height: 38vh;
+  }
+
+  .cir {
+    width: 21vw;
+    height: 10vh;
+  }
 }

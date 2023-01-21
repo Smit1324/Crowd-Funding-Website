@@ -6,6 +6,7 @@ import Invest from './components/Invest';
 import Raise from './components/Raise';
 import SignUp from './components/SignUp';
 import Login from './components/Login';
+import Success from './components/Success';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
@@ -20,6 +21,7 @@ function App() {
           <Route exact path='/raise' element={<Raise />}></Route>
           <Route exact path='/signup' element={<SignUp />}></Route>
           <Route exact path='/login' element={<Login />}></Route>
+          <Route exact path='/success' element={<Success />}></Route>
         </Routes>
         <Footer />
       </Router>
