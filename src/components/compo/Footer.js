@@ -49,16 +49,16 @@ const Footer = () => {
                                 <p className='text-muted mt-3 lh-lg f2-txt'>Ouestions or Feedback<br />Ask Us Anything</p>
                                 <ul className="nav flex-row text-sm-center text-lg-left f2-icons">
                                     <li className="nav-item mb-2 me-2">
-                                        <a className="ext-link" href="https://www.linkedin.com/company/shayar-community-private-limited/?originalSubdomain=in" target="_blank"><i className="fa-brands fa-linkedin"></i></a >
+                                        <a className="ext-link" href="https://www.linkedin.com/company/shayar-community-private-limited/?originalSubdomain=in" target="_blank" rel='noreferrer'><i className="fa-brands fa-linkedin"></i></a >
                                     </li>
                                     <li className="nav-item mb-2 mx-2">
-                                        <a className="ext-link" href="#" target="_blank"><i className="fa-brands fa-facebook"></i></a >
+                                        <a className="ext-link" href="https://www.google.com/" target="_blank" rel='noreferrer'><i className="fa-brands fa-facebook"></i></a >
                                     </li>
                                     <li className="nav-item mb-2 mx-2">
-                                        <a className="ext-link" href="#" target="_blank"><i className="fa-brands fa-square-instagram"></i></a >
+                                        <a className="ext-link" href="https://www.google.com/" target="_blank" rel='noreferrer'><i className="fa-brands fa-square-instagram"></i></a >
                                     </li>
                                     <li className="nav-item mb-2 ms-2">
-                                        <a className="ext-link" href="https://www.shayar.me/" target="_blank"><i className="fa-solid fa-square-arrow-up-right"></i></a >
+                                        <a className="ext-link" href="https://www.shayar.me/" target="_blank" rel='noreferrer'><i className="fa-solid fa-square-arrow-up-right"></i></a >
                                     </li>
                                 </ul>
                             </div>

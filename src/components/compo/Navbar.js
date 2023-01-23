@@ -1,8 +1,13 @@
 import React from 'react'
 import logo from '../imgs/logo.png'
+// import axios from "axios";
 import { Link, NavLink } from 'react-router-dom';
 
 const Navbar = () => {
+    // const del = async e => {
+    //     await axios.delete("https://6381c65053081dd549883e8c.mockapi.io/Crow-Funding/13");
+
+    // }
     return (
         <div className="container mt-0">
             <nav className="navbar navbar-expand-lg">
@@ -23,6 +28,7 @@ const Navbar = () => {
                                 <Link className="btn btn-outline-success btn-lg mx-4" id='login' to='/login'>Login</Link>
 
                                 <Link className="btn btn-outline-primary btn-lg" id='signup' to='/signup'>Sign Up</Link>
+                                {/* <button className="btn btn-outline-primary btn-lg" onClick={() => del()}>Clear API</button> */}
                             </div>
                         </ul>
                     </div>

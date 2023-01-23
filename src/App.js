@@ -1,12 +1,12 @@
 import React from 'react';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
-import Home from './components/Home';
-import Invest from './components/Invest';
-import Raise from './components/Raise';
-import SignUp from './components/SignUp';
-import Login from './components/Login';
-import Success from './components/Success';
+import Navbar from './components/compo/Navbar';
+import Footer from './components/compo/Footer';
+import Home from './components/pages/Home';
+import Invest from './components/pages/Invest';
+import Raise from './components/pages/Raise';
+import SignUp from './components/functions/SignUp';
+import Login from './components/functions/Login';
+import Success from './components/functions/Success';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
