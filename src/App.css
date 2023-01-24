@@ -334,6 +334,11 @@ body {
   font-weight: 500;
 }
 
+/* SUCCESS */
+.success{
+  height: 80vh;
+}
+
 
 
 /* RESPONSIVENESS */
@@ -500,5 +505,11 @@ body {
   .cir {
     width: 21vw;
     height: 10vh;
+  }
+  .success{
+    height: 55vh;
+  }
+  .success .h3{
+    font-size: larger;
   }
 }

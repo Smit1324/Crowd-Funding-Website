@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import invest from '../imgs/invest.png'
 
 const Invest = () => {
@@ -9,7 +9,7 @@ const Invest = () => {
         className="row g-0 overflow-hidden flex-md-row mb-5 h-md-250 position-relative w-100 inv">
         <div className="col mb-2 ps-4 d-flex flex-column position-static">
           <div className='h1 head'>
-            <NavLink to='#' className='invest-head-comp'>Invest Now</NavLink>
+            <Link to='#' className='invest-head-comp'>Invest Now</Link>
           </div>
           <div className='h6 sub-head mt-2'>
             Browse latest investment opportunities in SHAYAR

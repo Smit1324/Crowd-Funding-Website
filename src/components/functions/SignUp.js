@@ -36,18 +36,43 @@ const SignUp = () => {
       });
     }
     else {
-      await axios.post("https://6381c65053081dd549883e8c.mockapi.io/Crow-Funding", user);
-      toast.success('Account Created Successfully', {
-        position: "top-center",
-        autoClose: 3000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        theme: "dark",
-      });
-      setTimeout(() => navigate('/'), 3000);
+      let i = 1;
+      try {
+        while (i !== undefined) {
+          const users = await axios.get(`https://6381c65053081dd549883e8c.mockapi.io/Crow-Funding/${i}`);
+          if (user.email === users.data.email) {
+            toast.error('EMAIL ALREADY EXISTS', {
+              position: "top-center",
+              autoClose: 5000,
+              hideProgressBar: false,
+              closeOnClick: true,
+              pauseOnHover: true,
+              draggable: true,
+              progress: undefined,
+              theme: "light",
+            });
+            break;
+          }
+          else {
+            i++;
+          }
+        }
+      }
+
+      catch {
+        await axios.post("https://6381c65053081dd549883e8c.mockapi.io/Crow-Funding", user);
+        toast.success('Account Created Successfully', {
+          position: "top-center",
+          autoClose: 3000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "dark",
+        });
+        setTimeout(() => navigate('/'), 3000);
+      }
     }
   }
 

@@ -11,7 +11,7 @@ const Footer = () => {
                     <div className='d-flex mb-4 f0'>
 
                         <div className="mb-3">
-                            <NavLink to='/'>
+                            <NavLink to="/">
                                 <img src={logo} className='logo img-fluid' alt='Shayar' />
                             </NavLink>
                             <p className="text-muted ms-4 lh-lg foot-sub">Shayar Community Pvt Ltd © 2022<br />All Rights Reserved</p>

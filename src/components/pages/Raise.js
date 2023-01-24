@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, NavLink } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import raisegph from '../imgs/raise_graph.png'
 import raise from '../imgs/raise.png'
 
@@ -10,7 +10,7 @@ const Raise = () => {
       <div
         className="row g-0 overflow-hidden flex-md-row mb-5 h-md-250 position-relative w-100 raise">
         <div className="col mb-2 ps-4 d-flex flex-column position-static">
-          <div className='h1 head'>Raise<br /><NavLink to='#' className='raise-head-comp'>Founder - Friendly<br /></NavLink> Capital
+          <div className='h1 head'>Raise<br /><Link to='#' className='raise-head-comp'>Founder - Friendly<br /></Link> Capital
           </div>
           <div className='h6 sub-head mt-2'>Raise funds while increasing product sales, growing your<br />brand, and engaging your community.
           </div>
