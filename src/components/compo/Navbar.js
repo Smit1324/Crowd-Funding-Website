@@ -1,5 +1,6 @@
 import React from 'react'
 import logo from '../imgs/logo.png'
+import menu from '../imgs/MENU.svg'
 import { Link, NavLink } from 'react-router-dom';
 // import {useState}from 'react'
 // import axios from "axios";
@@ -33,6 +34,9 @@ const Navbar = () => {
                                 {/* <button className="btn btn-outline-primary btn-lg" onClick={() => del()}>Clear API</button> */}
                             </div>
                         </ul>
+                    </div>
+                    <div className='d-md-none d-lg-none d-block'>
+                    <a className="navbar-brand" href="#footer"><img src={menu} className='menu' alt='Shayar' /></a >
                     </div>
                 </div>
             </nav>

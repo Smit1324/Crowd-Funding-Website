@@ -11,6 +11,14 @@ body {
   height: 17.9vh;
 }
 
+.menu {
+  position: absolute;
+  right: 3vw;
+  top: 5.8vh;
+  width: 10vw;
+  height: 3vh;
+}
+
 .media {
   width: 9.59vw;
   height: 8.9vh;
@@ -168,7 +176,8 @@ body {
 }
 
 .md {
-  background: rgb(113 113 113 / 5%);;
+  background: rgb(113 113 113 / 5%);
+  ;
 }
 
 .med {
@@ -335,7 +344,7 @@ body {
 }
 
 /* SUCCESS */
-.success{
+.success {
   height: 80vh;
 }
 
@@ -506,10 +515,12 @@ body {
     width: 21vw;
     height: 10vh;
   }
-  .success{
+
+  .success {
     height: 55vh;
   }
-  .success .h3{
+
+  .success .h3 {
     font-size: larger;
   }
 }
