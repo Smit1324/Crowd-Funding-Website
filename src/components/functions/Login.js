@@ -40,58 +40,52 @@ const Login = () => {
             });
         }
         else {
+            adminData.map(async (curElem) => {
+                if (log.eml === curElem.Email && log.pwd === curElem.Password) {
+                    setTimeout(() => navigate('/adminlogin'), 3000);
 
+                }
+                else {
+                    let i = 1;
+                    try {
+                        while (i !== undefined) {
+                            const users = await axios.get(`https://6381c65053081dd549883e8c.mockapi.io/Crow-Funding/${i}`);
 
+                            if (log.eml === users.data.email && log.pwd === users.data.pass) {
+                                users.id = i;
+                                setTimeout(() => navigate(`/userlogin/${users.id}`), 3000);
+                                break;
+                            }
 
-            let i = 1;
-            try {
-                while (i !== undefined) {
-                    const users = await axios.get(`https://6381c65053081dd549883e8c.mockapi.io/Crow-Funding/${i}`);
-                    adminData.map((curElem) => {
-                        if (log.eml === curElem.Email && log.pwd === curElem.Password) {
-                            setTimeout(() => navigate('/adminlogin'), 3000);
-
+                            else {
+                                i++;
+                            }
                         }
-                    })
-                    if (log.eml === users.data.email && log.pwd === users.data.pass) {
-                        users.id = i;
-                        setTimeout(() => navigate(`/userlogin/${users.id}`), 3000);
-                        break;
                     }
-
-                    else {
-                        i++;
+                    catch {
+                        toast.error('NO USER FOUND', {
+                            position: "top-center",
+                            autoClose: 5000,
+                            hideProgressBar: false,
+                            closeOnClick: true,
+                            pauseOnHover: true,
+                            draggable: true,
+                            progress: undefined,
+                            theme: "light",
+                        });
+                        
                     }
                 }
-            }
-            catch {
-                toast.error('NO USER FOUND', {
-                    position: "top-center",
-                    autoClose: 5000,
-                    hideProgressBar: false,
-                    closeOnClick: true,
-                    pauseOnHover: true,
-                    draggable: true,
-                    progress: undefined,
-                    theme: "light",
-                });
-                toast.warning('Check Email and Password', {
-                    position: "top-center",
-                    autoClose: 5000,
-                    hideProgressBar: false,
-                    closeOnClick: true,
-                    pauseOnHover: true,
-                    draggable: true,
-                    progress: undefined,
-                    theme: "light",
-                });
-            }
+            })
+
+
+
 
         }
 
 
     }
-    
+
     return (
         <>
             <Navbar />
@@ -105,10 +99,10 @@ const Login = () => {
 
 
                         <div className="mb-3">
-                            <label className="form-label lbl">Email address</label>
+                            <label for="email" className="form-label lbl">Email address</label>
                             <input type="email" className="form-control" id="InputEmail1" aria-describedby="emailHelp" name="eml" value={eml} onChange={e => {
                                 onInputChange(e)
-                            }} autoComplete="off" />
+                            }} autoComplete="off" required/>
 
                         </div>
                         <div className="mb-4">

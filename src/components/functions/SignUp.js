@@ -24,6 +24,10 @@ const SignUp = () => {
     setuser({ ...user, [e.target.name]: e.target.value })
   }
 
+  const click = e => {
+    navigate('/signup/companysignup');
+  }
+
   const onSubmit = async e => {
     e.preventDefault();
     if (!firstName || !lastName || !email || !pass) {
@@ -38,7 +42,6 @@ const SignUp = () => {
         theme: "dark",
       });
     }
-    
     else {
       let i = 1;
       try {
@@ -64,7 +67,7 @@ const SignUp = () => {
       }
 
       catch {
-        await axios.post("https://6381c65053081dd549883e8c.mockapi.io/Crow-Funding", user);
+        axios.post("https://6381c65053081dd549883e8c.mockapi.io/Crow-Funding", user);
         toast.success('Account Created Successfully', {
           position: "top-center",
           autoClose: 3000,
@@ -75,7 +78,7 @@ const SignUp = () => {
           progress: undefined,
           theme: "dark",
         });
-        setTimeout(() => navigate('/userlogin'), 3000);
+        setTimeout(() => navigate(`/userlogin/${i}`), 3000);
       }
     }
   }
@@ -122,15 +125,9 @@ const SignUp = () => {
                     onInputChange(e)
                   }} autocomplete="off" />
                 </div>
-
                 <button className='btn btn-primary btn-lg sc-btn w-100' onClick={e => onSubmit(e)}>Create Account</button>
-                <div className='d-flex justify-content-center w-100 mt-3'>
-                  <button className='btn btn-outline-success btn-lg sc-btn-2 me-2'><i className="fa-brands fa-google"></i> Continue with google</button>
-                  <button className='btn btn-outline-info btn-lg sc-btn-2 ms-2'><i className="fa-brands fa-facebook"></i> Continue with facebook</button>
-                </div>
+                <button className='btn btn-outline-success mt-2 btn-lg sc-btn w-100' onClick={e => click(e)}>Sign Up As Investor</button>
               </form>
-
-
             </div>
           </div>
 

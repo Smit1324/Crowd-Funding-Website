@@ -31,13 +31,13 @@ const Userdash = ({ uid }) => {
                     <div className="collapse navbar-collapse" id="navbarNav">
                         <ul className="navbar-nav">
                             <li className="nav-item mx-4">
-                                <NavLink className="nav-link link" aria-current="page" to={`/${id}`}>Invest</NavLink >
+                                <NavLink className="nav-link link px-3" aria-current="page" to={`/${id}`}>Invest</NavLink >
                             </li>
                             <li className="nav-item mx-4">
-                                <NavLink className="nav-link link" aria-current="page" to={`/userraise/${id}`}>Raise</NavLink >
+                                <NavLink className="nav-link link px-3" aria-current="page" to={`/userraise/${id}`}>Raise</NavLink >
                             </li>
                             <li className="nav-item mx-4">
-                                <a className="nav-link link" aria-current="page" href="#footer">Contact Us</a >
+                                <a className="nav-link link px-3" aria-current="page" href="#footer">Contact Us</a >
                             </li>
                             <div className="d-flex">
                                 <button className="btn btn-outline-primary mx-3 px-4" id='login' onClick={() => User()}>User</button>

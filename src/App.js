@@ -13,18 +13,24 @@ import Ahome from './components/pages/Ahome';
 import Viewuser from './components/functions/Viewuser';
 import Usersdetails from './components/declarations/Usersdetails';
 import Companiesdetails from './components/declarations/Companiesdetails';
+import Viewcompany from './components/functions/Viewcompany';
+import Companysignup from './components/pages/Companysignup';
+import Companylogin from './components/pages/Companylogin';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
     <>
+    
       <Router>
         <Routes>
           <Route exact path='/' element={<Home />}></Route>
           <Route exact path='/invest' element={<Invest />}></Route>
           <Route exact path='/raise' element={<Raise />}></Route>
           <Route exact path='/signup' element={<SignUp />}></Route>
+          <Route exact path='/signup/companysignup' element={<Companysignup />}></Route>
+          <Route exact path='/companylogin' element={<Companylogin/>}></Route>
           <Route exact path='/login' element={<Login />}></Route>
           <Route exact path='/userlogin/:id' element={<Userlogin />}></Route>
           <Route exact path='/userhome/:id' element={<Uhome />}></Route>
@@ -35,6 +41,7 @@ function App() {
           <Route exact path='/adminlogin/usersdetails' element={<Usersdetails />}></Route>
           <Route exact path='/adminlogin/userdetails/viewuser' element={<Viewuser />}></Route>
           <Route exact path='/adminlogin/companiesdetails' element={<Companiesdetails />}></Route>
+          <Route exact path='/adminlogin/companiesdetails/viewcompany' element={<Viewcompany />}></Route>
         </Routes>
       </Router>
 

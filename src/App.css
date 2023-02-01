@@ -11,6 +11,7 @@ body {
   height: 17.9vh;
 }
 
+
 .menu {
   position: absolute;
   right: 3vw;
@@ -64,6 +65,14 @@ body {
   font-size: 20px;
   line-height: 23px;
   color: #000000;
+  /* border: 2px solid white; */
+  border-radius: 20px;
+}
+
+.link:hover{
+  background-color: #000000;
+  color: white;
+  transition: all 0.5s ease-out;
 }
 
 #login {
@@ -177,7 +186,6 @@ body {
 
 .md {
   background: rgb(113 113 113 / 5%);
-  ;
 }
 
 .med {

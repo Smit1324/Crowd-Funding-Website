@@ -43,7 +43,7 @@ const Usersdetails = () => {
                                         <td className='hidden ps-4'>0</td>
                                         <td className='hidden ps-4'>0</td>
                                         <td>
-                                            <Link className="btn btn-outline-primary btn-sm ms-3" to="/adminlogin/userdetails/viewuser"><i className="fa-solid fa-eye"></i></Link>
+                                            <Link className="btn btn-outline-primary btn-sm ms-1" to="/adminlogin/userdetails/viewuser"><i className="fa-solid fa-eye"></i></Link>
                                         </td>
                                     </tr>
                                 ))

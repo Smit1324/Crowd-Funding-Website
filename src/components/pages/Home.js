@@ -34,11 +34,12 @@ const Home = () => {
 
         {/* MEDIA */}
 
-        <div className='container-fluid md mt-5 pt-lg-5'>
+        <div className='container rounded-5 md mt-5 pt-lg-5'>
           <div>
             <p className='text-center h1 div-head'>In the Media</p>
             <p className='text-center sub-head'>We have been covered by top media groups around India.</p>
           </div>
+          
           <div className='mt-5 py-lg-5 med'>
             <img src={media} alt="img" className='media mb-3' />
             <img src={media} alt="img" className='media mb-3' />
